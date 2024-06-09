@@ -20,7 +20,7 @@ Console.WriteLine($"{result} : {Convert.ToHexString(inputBytes)}");
 Console.WriteLine($"привэ в UTF8 {Convert.ToHexString(inputBytes)}");
 
 inputBytes = System.Text.Encoding.ASCII.GetBytes("привэ");
-Console.WriteLine($"привэ в ASCII {Convert.ToHexString(inputBytes)}");
+Console.WriteLine($"привэ в ASCII {Convert.ToHexString(inputBytes)} - нет кириллицы");
 
 inputBytes = System.Text.Encoding.BigEndianUnicode.GetBytes("привэ");
 Console.WriteLine($"привэ в BigEndianUnicode {Convert.ToHexString(inputBytes)}");
